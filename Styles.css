@@ -1,0 +1,864 @@
+#Bar{
+  position: relative;
+  z-index:999;
+}
+.home{
+                background-image: url(image/robotBG.png);
+            font-family: 'Poppins';
+                background-image: url(image/robotBG.png);
+    background-repeat:repeat;
+    background-size: 143% 143%;
+
+}
+/* Home.php style */
+.home .content .text{
+  margin-left: 3em;
+  margin-top: 20em;
+  text-align: center;
+    font-family: monospace;
+}
+.home .content .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.home .content .container .imgbox{
+  margin: 10px 20px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 435px;
+  height: 300px;
+  flex: 1;
+  overflow: hidden;
+ 
+  outline-offset: -15px;
+  background-color: blue;
+  -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+  -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+  box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+}
+.home .content .container .imgbox .thumbnail{
+  overflow: hidden;
+  min-width: 250px;
+  height: 300px;
+  position: relative;
+  opacity: 0.9;
+  backface-visibility: hidden;
+  transition: all 0.4s ease-out;
+}
+.home .content .container .imgbox .thumbnail img{
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  height: 115%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+}
+.home .content .container .imgbox .thumbnail span{
+  position: absolute;
+  z-index: 2;
+  top: calc(150px - 20px);
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 50px;
+  margin: 0 45px;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  transition: all 0.3s ease-out;
+}
+.home .content .container .imgbox .thumbnail:hover{
+  backface-visibility: hidden;
+  transform: scale(1.15,1.15);
+  opacity: 1;
+}
+.home .content .container .imgbox .thumbnail:hover span{
+  opacity: 0;
+}
+
+.home .extraspace{
+  margin: 3em;
+}
+
+/* end of Home.php style */
+/* Login.php style */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+}
+.btn-primary, .btn-primary:hover {
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	color: #ffffff; }
+
+.LoginPage .btn-primary:active,
+.LoginPage .btn-primary:focus{
+	background:blue; 
+	position: relative;
+	top: 1px;
+	border: 1px solid blue;	
+
+}
+.btn-primary { 
+  width: 30%;
+	cursor: pointer;	
+	background:blue;
+	padding: 8px 5px;
+	color: white;
+	font-size: 24px;	
+	border: 1px solid black;	
+	margin-bottom: 10px;	
+
+  
+}
+
+.btn-block {
+	width: 30%;
+  margin-top: 0.4em;
+	margin-left: 4em; 
+}
+
+.LoginPage .WhiteBox {
+  background-color: white;
+  width: 34em;
+  height: 24em;
+  /* margin-left: 33em; */
+  /* margin-top: 10em; */
+  border-radius: 10px;
+
+  margin: auto;
+  padding: 2em;
+    border: 1px solid;
+}
+.LoginPage input[type="password"]:hover, .LoginPage input[type="text"]:hover{
+	
+
+}
+.LoginPage { 
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', monospace;
+}
+.LoginPage .error{
+  font-size: 13px;
+  color: red;
+  margin-left: -2em;
+  margin-top: 1em;
+}
+.login {
+  /* margin: -150px 0 0 -150px; */
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 10px;
+}
+.login h2 {
+	color: black;
+	font-size: 3em;
+	font-family: monospace;
+	text-align:center;
+	margin-bottom: 18px;
+  
+}
+.LoginPage .login .far, .LoginPage .login .fas{
+  position: absolute;
+  margin: -35px 0 0 -1em;
+  color: gray;
+}
+.LoginPage .login input { 
+  padding: 10px 7px 10px 40px;
+  width: 120%; 
+  margin-left: -2em;
+  margin-bottom: 10px; 
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: black;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+
+}
+
+.LoginPage .username:focus+.fa-user, .LoginPage input[type="password"]:focus+.fa-key{
+  color:black;
+}
+
+.LoginPage .Links{
+  text-align: center;
+	margin-top: 4em;
+  margin-left: -2em;
+	font-size: 12px;
+   
+    
+}
+
+
+.LoginPage .Links a:nth-of-type(2){
+	margin-left: 9.3em;
+    color: blue;
+    color: blue;
+}
+/* end of Login.php style */
+
+/* --------------------------------------------------- */
+
+/* Contact.php style */
+.ContactPage h2 {
+  font-family: monospace;
+    font-size: 2.5em;
+  margin-left: 3em;
+  color: black;
+  
+
+}
+
+.ContactPage .content{
+  margin-top: 3em;
+  margin-left: 50em;
+}
+
+.ContactPage .templatemo_form button {
+  width: 160px;
+  line-height: 34px;
+  color: white;
+  border-radius: 10px;
+  background: blue;
+  border: none;
+  margin-top: 10px;
+}
+
+.ContactPage .templatemo_form button:hover {
+  width: 160px;
+  line-height: 34px;
+  color: white;
+  border-radius: 10px;
+  
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.ContactPage .templatemo_form button:focus {
+  background:lightblue; 
+
+}
+.ContactPage .templatemo_form input {
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.ContactPage .templatemo_form textarea {
+  height: 100px;
+}
+
+.ContactPage .templatemo_form input,
+.ContactPage .templatemo_form textarea {
+  font-family: 'Open Sans', monospace;
+  font-size: 13px;
+  padding: 6px 2%;
+  width: 70%;
+  border: 1px solid lightgray;
+}
+.ContactPage .address{
+  margin-top: 1em;
+  font-size: 13px;
+}
+.ContactPage .address{
+}
+.ContactPage .templatemo_contactmap {
+  float: left;
+  width: 40%;
+  height: auto;
+  max-width: 680px;
+  max-height: 400px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.ContactPage .mapouter{
+  position: absolute;
+  top: 15.2em;
+  margin-left: 7em;
+  height:330px;
+  width:600px;
+}
+.ContactPage .mapouter .gmap_canvas{
+  border: 2px solid blue;
+  overflow:hidden;
+  background:none!important;
+  height:330px;
+  width:600px;
+}
+/* end of Contact.php style */
+
+/* --------------------------------------------------- */
+
+/* AboutUs.php style */
+.AboutUs .WhiteBox{
+	background-color: #faf8f4;
+	width: 1000px;
+	height: 500px;
+  margin-left: 18em;
+	border-radius: 10px;
+    border: 1px solid;
+
+  
+}
+.AboutUs p{
+  text-align: center;
+  font-size: 17px;
+  padding-top: 2em;
+}
+.AboutUs hr{
+  width: 50%;
+  margin-left: 15em;
+  margin-top: 1em;
+}
+.AboutUs .footer-heading{
+  display: flex;
+  flex-direction:column;
+  position:fixed;
+}
+.AboutUs table{ 
+  width: 70%; 
+  margin-left: 8em;
+}
+
+.AboutUs caption{
+  margin-top: 2em;
+  color: blue;
+
+}     
+.AboutUs td{
+  border-style:none; 
+ 
+  border-width:5px; 
+  padding: 10px; 
+  text-align: center;
+} 
+
+/* end og AboutUs.php style */
+
+/* --------------------------------------------------- */
+
+/* CreateAccount.php style */
+.CreateAccount .content{
+  font-size: 14px;
+}
+.CreateAccount .WhiteBox{
+  z-index: -1;
+  position: absolute;
+  margin-top: -1.4em;
+	background-color: white;
+	width: 500px;
+	height: 580px;
+  margin-left: 32em;
+	border-radius: 10px;
+    
+border: 1px solid;
+  
+  
+}
+.CreateAccount .content h2 {
+	color: black;
+	
+	text-align:center;
+  padding-top: 0.3em;
+  padding-left: 2em;
+  padding-bottom: 0.2em;
+  margin-right: 1em;
+  margin-bottom: 0.3em;
+}
+
+.CreateAccount input{
+  width: 330px;
+}
+.CreateAccount .content span{
+  color: red;
+}.CreateAccount .contents span{
+  color: aqua;
+}
+.CreateAccount .content .phonN{
+  margin-left: -1em;
+}
+
+.CreateContent,.loginContent{
+
+  text-align: center;
+}
+.CreateAccount .formButtons:active,
+.CreateAccount .formButtons:focus{
+	background:lightblue; 
+	position: relative;
+	top: 1px;
+	border: 1px solid black;	
+
+}
+.CreateAccount .formButtons{ 
+  margin-top: 0.3em;
+  width: 10%;
+	cursor: pointer;	
+	background: blue;
+	padding: 8px 5px;
+	color: white;
+	font-size: 15px;	
+	border: 1px solid black;	
+	margin-bottom: 2px;	
+
+  
+}
+.CreateAccount .content form{
+  margin-left: 40em;
+}
+.CreateAccount .content input , .CreateAccount .content select { 
+
+  padding: 10px 7px 10px 40px;
+  width: 42%; 
+  margin-left: 0.2em;
+  margin-bottom: 10px; 
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: black;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+
+}
+
+
+
+.CreateAccount .content input:hover, .CreateAccount select:hover{
+	
+
+}
+.CreateAccount form .fa-user-alt{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 41.1em;
+  top: 16.4em;
+  color: gray;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.CreateAccount form .fa-envelope{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 41.1em;
+  top: 21.4em;
+  color: gray;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.CreateAccount form .fa-lock, .CreateAccount form .fa-unlock{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 41.1em;
+  top: 26.2em;
+  color: gray;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.CreateAccount form .fa-phone-alt{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 41.1em;
+  top: 33.5em;
+  color: gray;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.CreateAccount form .fa-map-marker-alt{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 41.1em;
+  top: 38.4em;
+  color: gray;
+  pointer-events: none;
+}
+.CreateAccount form .fa-street-view{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 41.1em;
+  top: 43.3em;
+  color: gray;
+  transition: 0.3s;
+  pointer-events: none;
+
+}
+
+
+/* ManageTheProduct.php style */
+.ManageTheProduct .content{
+  font-size: 14px;
+}
+.ManageTheProduct .WhiteBox{
+  z-index: -1;
+  position: absolute;
+  margin-top: -1.6em;
+	background-color: white;
+	width: 580px;
+	height: 680px;
+  margin-left: 32em;
+	border-radius: 10px;
+    border: 1px solid;
+
+  
+}
+.ManageTheProduct .content button{
+  background-color: transparent;
+  border: none;
+  color:blue;
+  padding-left: 0.4em;
+}
+.ManageTheProduct .content button:hover{
+  background-color: transparent;
+  border: none;
+  color:lightblue;
+}
+.ManageTheProduct .content h2 {
+  color: black;
+	
+	text-align:center;
+  padding-top: 0.3em;
+  padding-bottom: 0.2em;
+  margin-left: 4em;
+  margin-bottom: 0.3em;
+}
+.ManageTheProduct form{
+  text-align: left;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.ManageTheProduct .content span{
+  color: red;
+}
+.ManageTheProduct .content .formButtons:active{
+	background:lightblue; 
+}
+.ManageTheProduct .content .formButtons{ 
+  border-radius: 4px 0px 0px 4px;
+  margin-top: 1.3em;
+  width: 8%;
+  text-align: left;
+	cursor: pointer;	
+	background: blue;
+	padding: 8px 5px;
+	color: white;
+	font-size: 15px;	
+  border: 1px solid rgba(0,0,0,0.3);
+	margin-bottom: 2px;	
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);  
+}
+.ManageTheProduct .content .ButtonsAlign{
+  margin-left: -9.6em;
+  margin-top: -30em;
+
+}
+.ManageTheProduct .content form{
+  margin-left: 40em;
+}
+.ManageTheProduct .content .InputStyle , .ManageTheProduct .content select { 
+  padding: 10px 7px 10px 15px;
+  margin-left: 0.2em;
+  margin-bottom: 10px; 
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: black;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+
+}
+
+.ManageTheProduct form .InputStyle:focus {
+
+}
+.ManageTheProduct .InputStyle:hover{
+	
+
+}
+.ManageTheProduct form .error{
+  font-size: 13px;
+  color: red;
+
+}
+.Forgetpass .error{
+  text-align: center;
+  color: red;
+  font-size: 13px;
+}
+.ManageTheProduct form .success, .Forgetpass .success{
+  font-size: 12.4px;
+  color: green;
+
+}
+.ManageTheProduct .num input::-webkit-outer-spin-button,
+.ManageTheProduct .num input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;}
+.ManageTheProduct .quantity input::-webkit-outer-spin-button,
+.ManageTheProduct .quantity input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;}
+
+.ManageTheProduct .num input[type="number"] {
+-moz-appearance: textfield;
+}
+
+.ManageTheProduct textarea{
+  border: 1px solid rgba(0,0,0,0.3);
+}
+.ManageTheProduct .extraspace{
+  margin: 26em;
+}
+/* end of ManageTheProduct.php style */
+
+/* All product stylesheet */
+.quantity input[type="number"]
+{
+  width: 80px;
+  text-align: center;
+  height: 39px;
+  padding: 0;
+  margin: 0;
+  border: solid 1px   ;
+  border-color: blue;
+
+}
+.quantity button{
+  cursor: pointer;
+}
+ .productname 
+{
+    text-align: center; 
+    color: black;
+    font-size: 30px;
+}
+  .productDisc{
+    color: gray;
+    font-style: italic;
+    font-size:  15px;
+}
+.quantity .btn-secondary {
+    border-color: blue;
+    height: 39px;
+    width: 50px;
+    border: 1px solid;
+    box-shadow: none; 
+}
+/* end of AllCake.php style */
+
+/* Special Order stylesheet */
+.SpecialOrder .form form{
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 50px;
+  padding-left: 60px;
+  color: black;
+
+}
+
+.SpecialOrder.templatemo_form button:focus{
+  background: green; 
+}
+
+
+.SpecialOrder .templatemo_form button {
+  width: 100px;
+  line-height: 34px;
+  color: white;
+  border-radius: 10px;
+  background: blue;
+  border: none;
+  margin-top: 10px;
+}
+
+.SpecialOrder.templatemo_form button:hover {
+  width: 160px;
+  line-height: 34px;
+  color: white;
+  border-radius: 10px;
+  background: #a5526b;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.SpecialOrder.templatemo_formAdd button:focus{
+  background: #27805e; 
+}
+
+
+.SpecialOrder .templatemo_formAdd button {
+  width: 100px;
+  line-height: 34px;
+  color: white;
+  border-radius: 10px;
+  background: blue;
+  border: none;
+  margin-top:0px;
+  margin-left: 50px;
+}
+
+.SpecialOrder.templatemo_formAdd button:hover {
+  width: 160px;
+  line-height: 34px;
+  color: #ffffff;
+  border-radius: 10px;
+  background: #a5526b;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+.SpecialOrder figure{position: absolute;
+        left: 500pt;
+        top: 130pt;}
+
+/* end of SpecialOrder.php style */
+
+/* ForgetPass.php Style */
+.LoginPage .newWidth{
+  width: 90%;
+  font-size: 16px;
+  margin-left: 1em;
+}
+.Forgetpass .WhiteBox{
+  height: 300px;
+}
+/* end of ForgetPass.php style */
+
+.CreateAccount input:invalid+.checkEmail:after {
+  position: absolute;
+  content: '✖';
+  margin-left: 0.5em;
+  bottom: 30em;
+  color: red;
+}
+
+.CreateAccount input:valid+.checkEmail:after {
+  position: absolute;
+  content: '✓';
+  margin-left: 0.5em;
+  bottom: 30em;
+  color: green;
+}
+.CreateAccount input:invalid+.checkTel:after {
+  position: absolute;
+  content: '✖';
+  margin-left: 0.5em;
+  bottom: 18em;
+  color: red;
+}
+.CreateAccount hr{
+  width: 42%;
+  opacity: 50%;
+  top: 5px;
+}
+.CreateAccount input:valid+.checkTel:after {
+  position: absolute;
+  content: '✓';
+  margin-left: 0.5em;
+  bottom: 18em;
+  color: green;
+}
+.CreateAccount #setMsg{
+  font-size: 12px;
+  color:red;
+}
+.CreateAccount #setErrorName{
+  font-size: 12px;
+  color:red;
+}
+.CreateAccount .tooltip{
+  float:left; 
+  left: 30em; 
+  bottom: 4.3em;
+  position:relative; 
+  z-index:2; 
+}
+.CreateAccount .tooltip:hover{
+  z-index:3; 
+}
+.CreateAccount .tooltip > span{
+  display:inline-block;
+  width:15px;
+  height:15px;
+  line-height:15px;
+  font-size:0.9em;
+  font-weight:bold; 
+  text-align:center; 
+  color:white;
+  cursor:help; 
+  background-color:blue;
+  position:relative;
+  border-radius:10px;
+ }
+.CreateAccount .tooltip .contents{
+  opacity:0;
+  width:240px;
+  background-color:#333;
+  color:white;
+  font-size:0.9em;
+  position:absolute;
+  top:0;
+  left:20px;
+  padding:8px;
+  border-radius:6px;
+  pointer-events:none;
+
+}
+.CreateAccount .tooltip p{ 
+  padding:0; 
+}
+.CreateAccount .tooltip.down .contents{
+  left:auto;
+  right:0;
+  top:30px;
+}
+.CreateAccount .tooltip:hover .contents{ 
+  opacity:1;
+  left:36px;
+ }
+.CreateAccount .tooltip .contents b{ height:0;
+  width:0;
+  border-color:#333 #333 transparent transparent;
+  border-style:solid; border-width:9px 7px;
+  position:absolute;
+  left:-14px;
+  top:8px;
+}
+.CreateAccount .tooltip.down .contents b{ 
+  left:auto;
+  right:6px;
+  top:-10px;
+  border-width:5px;
+  border-color:transparent #333 #333 transparent;
+}
+
+
+.CreateAccount .content .bottom{
+  margin-top: 1em;
+}
+
+.card:nth-of-type(1){
+  margin-top:30px;
+}
